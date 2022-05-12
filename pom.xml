@@ -10,8 +10,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<lombok.version>1.18.22</lombok.version>
+		<junit.version>4.12</junit.version>
 		<com.fasterxml.jackson.version>2.13.1</com.fasterxml.jackson.version>
 		<compiler.maven.plugin.version>3.8.1</compiler.maven.plugin.version>
+		<gpg.maven.plugin.version>3.0.1</gpg.maven.plugin.version>
 	</properties>
 	<scm>
 		<connection>scm:git:ssh://git@github.com:bancstac/bancstac-public-model.git</connection>
@@ -38,7 +40,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -53,6 +55,20 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>${gpg.maven.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 	</build>
 </project>
