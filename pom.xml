@@ -16,6 +16,7 @@
 		<com.fasterxml.jackson.version>2.13.1</com.fasterxml.jackson.version>
 		<compiler.maven.plugin.version>3.8.1</compiler.maven.plugin.version>
 		<gpg.maven.plugin.version>3.0.1</gpg.maven.plugin.version>
+		<shade.maven.plugin.version>3.3.0</shade.maven.plugin.version>
 	</properties>
 	<scm>
 		<connection>scm:git:ssh://git@github.com:bancstac/bancstac-public-model.git</connection>
@@ -90,4 +91,28 @@
 			</plugin>
 		</plugins>
 	</build>
+	<profiles>
+		<profile>
+			<!-- Distribution build -->
+			<!-- mvn clean install -DskipTests -P dist -->
+			<id>dist</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-shade-plugin</artifactId>
+						<version>${shade.maven.plugin.version}</version>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>shade</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
