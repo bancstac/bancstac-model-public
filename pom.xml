@@ -19,8 +19,8 @@
 		<shade.maven.plugin.version>3.3.0</shade.maven.plugin.version>
 	</properties>
 	<scm>
-		<connection>scm:git:ssh://git@github.com:bancstac/bancstac-public-model.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:bancstac/bancstac-public-model.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/bancstac/bancstac-public-model.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/bancstac/bancstac-public-model.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
