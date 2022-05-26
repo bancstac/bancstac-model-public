@@ -15,6 +15,8 @@
 		<junit.version>4.12</junit.version>
 		<com.fasterxml.jackson.version>2.13.1</com.fasterxml.jackson.version>
 		<compiler.maven.plugin.version>3.8.1</compiler.maven.plugin.version>
+		<javadoc.maven.plugin.version>3.4.0</javadoc.maven.plugin.version>
+		<source.maven.plugin.version>3.2.0</source.maven.plugin.version>
 		<gpg.maven.plugin.version>3.0.1</gpg.maven.plugin.version>
 		<shade.maven.plugin.version>3.3.0</shade.maven.plugin.version>
 	</properties>
@@ -67,6 +69,32 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>${source.maven.plugin.version}</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${javadoc.maven.plugin.version}</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
