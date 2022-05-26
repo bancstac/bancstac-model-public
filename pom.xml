@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bancstac</groupId>
 	<artifactId>bancstac-public-model</artifactId>
-	<version>4.0.2-SNAPSHOT</version>
+	<version>4.0.2</version>
 	<packaging>jar</packaging>
 	<name>bancstac-public-model</name>
 	<url>http://maven.apache.org</url>
@@ -21,7 +21,7 @@
 	<scm>
 		<connection>scm:git:ssh://git@github.com/bancstac/bancstac-public-model.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/bancstac/bancstac-public-model.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>bancstac-public-model-4.0.2</tag>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
