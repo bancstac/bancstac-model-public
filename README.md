@@ -1,1 +1,1 @@
-# bancstac-public-model
+# bancstac-model-public
