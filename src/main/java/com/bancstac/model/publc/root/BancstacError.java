@@ -1,4 +1,4 @@
-package com.bancstac.model.root;
+package com.bancstac.model.publc.root;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
