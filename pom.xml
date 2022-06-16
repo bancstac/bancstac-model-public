@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bancstac</groupId>
-	<artifactId>bancstac-public-model</artifactId>
+	<artifactId>bancstac-model-public</artifactId>
 	<version>4.0.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>bancstac-public-model</name>
+	<name>bancstac-model-public</name>
 	<url>http://maven.apache.org</url>
 	<description>Bancstac beans used to create json messages to communicate with Bancstac IPG</description>
 	<licenses>
@@ -32,9 +32,9 @@
 		<shade.maven.plugin.version>3.3.0</shade.maven.plugin.version>
 	</properties>
 	<scm>
-		<url>https://github.com/bancstac/bancstac-public-model</url>
-		<connection>scm:git:ssh://git@github.com/bancstac/bancstac-public-model.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/bancstac/bancstac-public-model.git</developerConnection>
+		<url>https://github.com/bancstac/bancstac-model-public</url>
+		<connection>scm:git:ssh://git@github.com/bancstac/bancstac-model-public.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/bancstac/bancstac-model-public.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
