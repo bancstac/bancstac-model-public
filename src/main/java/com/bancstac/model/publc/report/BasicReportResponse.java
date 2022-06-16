@@ -1,9 +1,9 @@
-package com.bancstac.model.report;
+package com.bancstac.model.publc.report;
 
 import java.util.Date;
 import java.util.List;
 
-import com.bancstac.model.component.CreditDetailRecord;
+import com.bancstac.model.publc.component.CreditDetailRecord;
 
 import lombok.Getter;
 import lombok.Setter;

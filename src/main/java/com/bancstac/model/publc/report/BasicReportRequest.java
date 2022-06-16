@@ -1,11 +1,11 @@
-package com.bancstac.model.report;
+package com.bancstac.model.publc.report;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import com.bancstac.model.enums.DateType;
-import com.bancstac.model.enums.TransactionType;
+import com.bancstac.model.publc.enums.DateType;
+import com.bancstac.model.publc.enums.TransactionType;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.bancstac.model.component;
+package com.bancstac.model.publc.component;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.bancstac.model.enums;
+package com.bancstac.model.publc.enums;
 
 public enum TransactionType {
 	// Credit types.
