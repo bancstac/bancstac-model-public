@@ -17,10 +17,10 @@ public class CreditDetailRecord {
 	private String transactionType;
 	@Getter
 	@Setter
-	private String clientId;
+	private Integer clientId;
 	@Getter
 	@Setter
-	private String customerId;
+	private Integer customerId;
 	@Getter
 	@Setter
 	private String responseCode;
@@ -68,7 +68,7 @@ public class CreditDetailRecord {
 	private String clientRef;
 	@Getter
 	@Setter
-	private int paymentAmount;
+	private Integer paymentAmount;
 	@Getter
 	@Setter
 	private String currency;
