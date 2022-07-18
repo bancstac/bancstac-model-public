@@ -1,8 +1,8 @@
-package com.bancstac.model.root;
+package com.bancstac.model.publc.root;
 
 import java.util.Date;
 
-import com.bancstac.model.deserializer.JsonRawValueDeserializer;
+import com.bancstac.model.publc.deserializer.JsonRawValueDeserializer;
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 

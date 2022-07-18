@@ -1,4 +1,4 @@
-package com.bancstac.model.deserializer;
+package com.bancstac.model.publc.deserializer;
 
 import java.io.IOException;
 
